@@ -1,0 +1,138 @@
+.header {
+  grid-column: full-start / full-end;
+  grid-row: header-start / header-end;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 3rem) [inner-start] minmax(min-content, 7rem)  repeat(10, minmax(min-content, 8rem))  minmax(min-content, 7rem) [inner-end] minmax(min-content, 3rem) 1fr;
+  grid-template-rows: [contact-start] minmax(min-content, 14rem) [contact-end] minmax(min-content, max-content)[header-end];
+
+
+  &__contact-bar {
+    grid-column: inner-start / inner-end;
+    grid-row: contact-start / contact-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.8rem 0;
+  }
+
+  &__logo {
+    height: 10.4rem;
+  }
+
+  &__contacts {
+    font-family: inherit;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    align-self: flex-end;
+    margin-bottom: 1.2rem;
+  }
+
+  &__phone {
+    font-size: 2rem;
+    font-weight: 700;
+    align-self: flex-end;
+  }
+
+  &__row {
+    grid-column: inner-start / inner-end;
+    grid-row: contact-end / header-end;
+
+    display: grid;
+
+    .heading-1 {
+      margin-top: 15.5rem;
+      margin-bottom: 4.5rem;
+    }
+
+    .heading-4 {
+      margin-bottom: 1.5rem;
+      &__subtitle {
+        margin-bottom: 10rem;
+      }
+    }
+  }
+
+  &__btn {
+    justify-self: center;
+    margin-bottom: 14rem;
+
+    background-color: transparent;
+    padding: 2.2rem 7.4rem;
+    border: 2px solid $color-white;
+
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-white;
+
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+      background-color: $color-hover;
+      border: 2px solid $color-hover;
+
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      background-color: #c8763b;
+      border: 2px solid #c8763b;
+      box-shadow: 2px -2px 100px -27px rgba(0,0,0,0.64);
+    }
+  }
+}
+
+/* ===SOCIAL=== */
+.social {
+  display: flex;
+  justify-content: center;
+
+ &__item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 2.6rem;
+   height: 2.6rem;
+   margin-right: 1rem;
+
+   border: 1px solid $color-white;
+   border-radius: 50%;
+   background-color: transparent;
+   transition: all .2s;
+
+   &:hover {
+     background-color: $color-hover;
+     border: $color-hover;
+     box-shadow: 2px -2px 100px -27px rgba(0,0,0,0.64);
+   }
+
+   &:active {
+     border: $color-hover;
+     .social__icon {
+       fill: rgba(51, 51, 51, 0.57);
+     }
+   }
+ }
+
+  &__icon {
+    display: block;
+    fill: $color-white;
+    height: 1.2rem;
+    transition: fill .2s;
+  }
+}

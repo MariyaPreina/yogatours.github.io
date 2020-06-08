@@ -1,0 +1,20 @@
+.about {
+  grid-column: full-start / full-end;
+  grid-row: header-end / about-end;
+  background-color: $color-background;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 3rem) [inner-start] minmax(min-content, 7rem)  repeat(10, minmax(min-content, 8rem))  minmax(min-content, 7rem) [inner-end] minmax(min-content, 3rem) 1fr;
+  padding: 5rem 0;
+
+  &__img {
+
+    height: 49rem;
+    grid-column: 3 / 9;
+    justify-self: center;
+  }
+
+  &__content {
+
+  }
+}

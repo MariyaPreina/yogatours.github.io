@@ -13,22 +13,22 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: "Muller", sans-serif;
-  color: #6D5D4B;
-  font-weight: 300;
-  line-height: 1.6; }
+  font-family: Muller, sans-serif;
+  color: #000;
+  font-weight: 300; }
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  @media only screen and (max-width: 62.5em) {
-    .container {
-      grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
-      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
-  @media only screen and (max-width: 50em) {
-    .container {
-      grid-template-rows: 6rem calc(100vh - 6rem); } }
+  grid-template-rows: [header-start] minmax(min-content, 83rem) [header-end] minmax(min-content, 59rem) [about-end] minmax(min-content, 78rem) [reasons-end] minmax(min-content, 75rem) [activities-end] minmax(min-content, 67rem) [schedule-end] minmax(min-content, 75rem) [programm-end] minmax(min-content, 132.1rem) [ayurveda-end] minmax(min-content, 73rem) [ayur-centr-end] minmax(min-content, 131.1rem) [instructors-end] minmax(min-content, 51rem) [testimonials-end] minmax(min-content, 89rem) [why-us-end] minmax(min-content, 45rem) [participation-end] minmax(min-content, 112rem) [prices-end] minmax(min-content, 68.6rem) [safeguards-end] minmax(min-content, 39rem) [footer-end] minmax(min-content, 9rem) [copyright-end];
+  grid-template-columns: [full-start] 1fr [center-start] minmax(min-content, 3rem) [col-start] minmax(min-content, 94rem) [col-end] minmax(min-content, 3rem) [center-end] 1fr [full-end];
+  /*  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:  [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }*/ }
 
 /* ===FONTS=== */
 @font-face {
@@ -65,3 +65,133 @@ body {
   src: url("../fonts/MullerBold/MullerBold.svg") format("svg"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700; }
+
+/* ===HEADINGS=== */
+.heading-1 {
+  font-family: inherit;
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center; }
+
+.heading-4 {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center; }
+  .heading-4__subtitle {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center; }
+
+.about {
+  grid-column: full-start / full-end;
+  grid-row: header-end / about-end;
+  background-color: #f8f2e4;
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 3rem) [inner-start] minmax(min-content, 7rem) repeat(10, minmax(min-content, 8rem)) minmax(min-content, 7rem) [inner-end] minmax(min-content, 3rem) 1fr;
+  padding: 5rem 0; }
+  .about__img {
+    height: 49rem;
+    grid-column: 3 / 9;
+    justify-self: center; }
+
+.header {
+  grid-column: full-start / full-end;
+  grid-row: header-start / header-end;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 3rem) [inner-start] minmax(min-content, 7rem) repeat(10, minmax(min-content, 8rem)) minmax(min-content, 7rem) [inner-end] minmax(min-content, 3rem) 1fr;
+  grid-template-rows: [contact-start] minmax(min-content, 14rem) [contact-end] minmax(min-content, max-content) [header-end]; }
+  .header__contact-bar {
+    grid-column: inner-start / inner-end;
+    grid-row: contact-start / contact-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.8rem 0; }
+  .header__logo {
+    height: 10.4rem; }
+  .header__contacts {
+    font-family: inherit;
+    color: #fff;
+    display: flex;
+    flex-direction: column; }
+  .header__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    align-self: flex-end;
+    margin-bottom: 1.2rem; }
+  .header__phone {
+    font-size: 2rem;
+    font-weight: 700;
+    align-self: flex-end; }
+  .header__row {
+    grid-column: inner-start / inner-end;
+    grid-row: contact-end / header-end;
+    display: grid; }
+    .header__row .heading-1 {
+      margin-top: 15.5rem;
+      margin-bottom: 4.5rem; }
+    .header__row .heading-4 {
+      margin-bottom: 1.5rem; }
+      .header__row .heading-4__subtitle {
+        margin-bottom: 10rem; }
+  .header__btn {
+    justify-self: center;
+    margin-bottom: 14rem;
+    background-color: transparent;
+    padding: 2.2rem 7.4rem;
+    border: 2px solid #fff;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s; }
+    .header__btn:hover {
+      background-color: #db883c;
+      border: 2px solid #db883c; }
+    .header__btn:focus {
+      outline: none; }
+    .header__btn:active {
+      background-color: #c8763b;
+      border: 2px solid #c8763b;
+      box-shadow: 2px -2px 100px -27px rgba(0, 0, 0, 0.64); }
+
+/* ===SOCIAL=== */
+.social {
+  display: flex;
+  justify-content: center; }
+  .social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 1rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all .2s; }
+    .social__item:hover {
+      background-color: #db883c;
+      border: #db883c;
+      box-shadow: 2px -2px 100px -27px rgba(0, 0, 0, 0.64); }
+    .social__item:active {
+      border: #db883c; }
+      .social__item:active .social__icon {
+        fill: rgba(51, 51, 51, 0.57); }
+  .social__icon {
+    display: block;
+    fill: #fff;
+    height: 1.2rem;
+    transition: fill .2s; }

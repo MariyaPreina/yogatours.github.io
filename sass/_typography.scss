@@ -49,3 +49,39 @@
   font-style: normal;
   font-weight: 700;
 }
+
+
+/* ===HEADINGS=== */
+.heading-1 {
+  font-family: inherit;
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+}
+
+.heading-2 {
+
+}
+
+.heading-3 {
+
+}
+
+.heading-4 {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+
+  &__subtitle {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-white;
+    text-align: center;
+  }
+}
