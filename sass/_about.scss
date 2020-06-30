@@ -15,6 +15,57 @@
   }
 
   &__content {
+    grid-column: 10 / 15;
+    justify-self: center;
+    align-self: center;
+  }
 
+  &__heading {
+    margin-bottom: 5rem;
+  }
+
+  &__heading-before {
+    font-family: inherit;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+
+  }
+
+  &__icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 2.2rem;
+
+    &--airplane {
+      height: 20px;
+      width: 20px;
+    }
+
+  }
+
+  &__item-name {
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 }

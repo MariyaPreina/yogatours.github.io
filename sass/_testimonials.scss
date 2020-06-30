@@ -1,0 +1,156 @@
+.testimonials {
+  grid-column: col-start / col-end;
+  grid-row: instructors-end / testimonials-end;
+
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  text-align: center;
+
+  &__heading {
+    grid-row: 1 / 2;
+    margin-bottom: 7rem;
+  }
+
+  &__title {
+    margin-bottom: 2.2rem;
+  }
+
+  &__slider {
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+
+  &__slide {
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+
+    transition-property: transform;
+    display: grid;
+  }
+
+  &__card {
+    width: 80%;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: minmax(min-content, 15rem) minmax(min-content, 59rem);
+    grid-column-gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+  }
+  &__img {
+    height: 100%;
+    backface-visibility: hidden;
+
+    &--1 {
+      transform: scale(1.2);
+    }
+
+    &--2 {
+      transform: scale(1.5) translateY(-1px);
+    }
+
+    &--3 {
+      transform: scale(1.5) translateX(-20px);
+    }
+  }
+
+  &__content {
+    font-family: inherit;
+    text-align: left;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: .7rem;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $testimonials-link;
+
+    &:active {
+      color: #642D10;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 1.5rem;
+
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    .next,
+    .prev {
+      fill: $color-gray-light-2;
+      width: 2rem;
+      height: 2.5rem;
+    }
+  }
+
+  .swiper-button-next {
+    right: -.5rem;
+  }
+
+  .swiper-button-prev {
+    left: -.5rem;
+  }
+
+  .swiper-pagination-bullet {
+    background: $color-gray-light-3;
+    height: 8px;
+    width: 8px;
+    opacity: .8;
+
+  }
+
+  .swiper-pagination-bullet-active {
+    background: transparent;
+    border: 2px solid $color-gray-light-3;
+    height: 10px;
+    width: 10px;
+  }
+
+
+}

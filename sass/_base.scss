@@ -1,9 +1,16 @@
 // COLOR VARIABLES
 $color-background: #f8f2e4;
 $color-hover: #db883c;
+$color-card: #fff8e6;
+$color-link: #5a56af;
+$testimonials-link: #c94410;
 
 $color-white: #fff;
 $color-black: #000;
+$color-gray-dark: #4b4b4b;
+$color-gray-light: #bdbdbd;
+$color-gray-light-2: #c0c0c0;
+$color-gray-light-3: #b4b4b4;
 
 
 //RESPONSIVE BREAKPOINTS
@@ -33,11 +40,28 @@ body {
   font-family: Muller, sans-serif;
   color: $color-black;
   font-weight: 300;
+  background-color: $color-white;
 }
 
 .container {
   display: grid;
-  grid-template-rows: [header-start] minmax(min-content, 83rem) [header-end] minmax(min-content, 59rem) [about-end] minmax(min-content, 78rem) [reasons-end] minmax(min-content, 75rem) [activities-end] minmax(min-content, 67rem) [schedule-end] minmax(min-content, 75rem) [programm-end] minmax(min-content, 132.1rem) [ayurveda-end] minmax(min-content, 73rem) [ayur-centr-end] minmax(min-content, 131.1rem) [instructors-end] minmax(min-content, 51rem) [testimonials-end] minmax(min-content, 89rem) [why-us-end] minmax(min-content, 45rem) [participation-end] minmax(min-content, 112rem) [prices-end] minmax(min-content, 68.6rem) [safeguards-end] minmax(min-content, 39rem) [footer-end] minmax(min-content, 9rem) [copyright-end];
+  grid-template-rows: [header-start] minmax(min-content, 83rem)
+  [header-end] minmax(min-content, 59rem) [about-end]
+  minmax(min-content, 78rem) [reasons-end]
+  minmax(min-content, 75rem) [activities-end]
+  minmax(min-content, 67rem) [schedule-end]
+  minmax(min-content, 75rem) [program-end]
+  minmax(min-content, 132.1rem) [
+  ayurveda-end] minmax(min-content, 65rem)
+  [ayur-centr-end] minmax(min-content, 132rem)
+  [instructors-end] minmax(min-content, 51rem) [
+  testimonials-end] minmax(min-content, 89rem)
+  [why-us-end] minmax(min-content, 45rem)
+  [participation-end] minmax(min-content, 112rem)
+  [prices-end] minmax(min-content, 68.6rem)
+  [safeguards-end] minmax(min-content, 39rem)
+  [footer-end] minmax(min-content, 9rem) [copyright-end];
+
   grid-template-columns: [full-start] 1fr
   [center-start] minmax(min-content, 3rem)
   [col-start] minmax(min-content, 94rem)

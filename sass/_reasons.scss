@@ -1,0 +1,79 @@
+.reasons {
+  grid-column: center-start / center-end;
+  grid-row: about-end / reasons-end;
+
+  display: grid;
+  grid-template-columns: minmax(min-content, 2rem) minmax(min-content, 1rem) [inner-start] minmax(min-content, 7rem)  repeat(10, minmax(min-content, 8rem))  minmax(min-content, 7rem) [inner-end] minmax(min-content, 1rem) minmax(min-content, 2rem);
+  grid-template-rows: repeat(4, min-content);
+  padding-top: 7.2rem;
+  padding-bottom: 7.7rem;
+
+  &__title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .line {
+    grid-column: inner-start / inner-end;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+
+  &__row-1, &__row-2{
+
+  }
+
+  &__row-1 {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin-top: 6.9rem;
+    justify-self: center;
+    margin-bottom: 4.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 32rem));
+  }
+
+  &__row-2 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 32rem));
+  }
+
+
+
+  &__item {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__img {
+    height: 18.3rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    width: 25rem;
+  }
+
+
+
+}
+
+.line {
+  width: 11.9rem;
+  height: .6rem;
+  fill: #C45F1C;
+}

@@ -16,55 +16,831 @@
     <meta content="#ffffff" name="theme-color">
 
     <link href="css/style.css" rel="stylesheet">
+    <link href="swiper/swiper.min.css" rel="stylesheet">
     <title>Йога-туры в Индию</title>
 </head>
 <body class="container">
-    <header class="header">
-            <div class="header__contact-bar">
-                <img alt="Логотип" class="header__logo" src="img/logo.png">
 
-                <div class="header__contacts">
-                    <p class="header__text">бесплатный звонок по России</p>
-                    <p class="header__phone">8 (800) 505-35-87</p>
-                </div>
-            </div>
+<header class="header">
+    <div class="header__contact-bar">
+        <img alt="Логотип" class="header__logo" src="img/logo.png">
 
-            <div class="header__row">
-                <h1 class="heading-1">Йога-туры в Индию</h1>
-                <h4 class="heading-4">океан / йога / путешествия / аюрведа</h4>
-                <p class="heading-4__subtitle">Индия, штат Керала, побережье океана</p>
+        <div class="header__contacts">
+            <p class="header__text">бесплатный звонок по России</p>
+            <p class="header__phone">8 (800) 505-35-87</p>
+        </div>
+    </div>
 
-                <button class="header__btn">Подать заявку</button>
+    <div class="header__row">
+        <h1 class="heading-1">Йога-туры в Индию</h1>
+        <h4 class="heading-4">океан / йога / путешествия / аюрведа</h4>
+        <p class="heading-4__subtitle">Индия, штат Керала, побережье океана</p>
 
-                <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="img/sprite.svg#vk"></use>
-                        </svg>
-                    </a>
+        <button class="btn btn--big">Подать заявку</button>
 
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="img/sprite.svg#facebook"></use>
-                        </svg>
-                    </a>
+        <div class="social">
+            <a class="social__item" href="#" target="_blank">
+                <svg class="social__icon">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+            </a>
 
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="img/sprite.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-    </header>
+            <a class="social__item" href="#" target="_blank">
+                <svg class="social__icon">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+            </a>
+
+            <a class="social__item" href="#" target="_blank">
+                <svg class="social__icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
 
 <section class="about">
-    <img class="about__img" src="img/about.png" alt="">
+    <img alt="" class="about__img" src="img/about.png">
 
     <div class="about__content">
+        <div class="about__heading">
+            <p class="about__heading-before">Что такое</p>
+            <h2 class="heading-2">йога-тур?</h2>
+        </div>
 
+        <p class="about__text">Йога-тур – это новый вид туризма, когда с путешествием в другую страну сочетаются занятия
+            по йоге. Вы отдыхаете на море, посещаете интересные места, несколько раз в день занимаетесь йогой и
+            проводите отпуск в интересной компании. Теперь отдых стал интересным и полезным для тела и души.</p>
+
+        <div class="about__list">
+            <div class="about__item">
+                <svg class="about__icon">
+                    <use xlink:href="img/sprite.svg#yoga"></use>
+                </svg>
+                <span class="about__item-name">Йога</span>
+            </div>
+
+            <div class="about__item">
+                <svg class="about__icon">
+                    <use xlink:href="img/sprite.svg#wave"></use>
+                </svg>
+                <span class="about__item-name">Море</span>
+            </div>
+
+            <div class="about__item">
+                <svg class="about__icon about__icon--airplane">
+                    <use xlink:href="img/sprite.svg#airplane"></use>
+                </svg>
+                <span class="about__item-name">Путешествие</span>
+            </div>
+        </div>
     </div>
 </section>
 
+<section class="reasons">
+    <h3 class="heading-3 reasons__title">5 причин поехать в йога-тур</h3>
+
+    <svg class="line">
+        <use xlink:href="img/sprite.svg#line"></use>
+    </svg>
+
+
+    <div class="reasons__row-1">
+        <div class="reasons__item">
+            <img alt="" class="reasons__img" src="img/reasons/1reason.png">
+            <p class="reasons__text">Провести отпуск нестандартно
+                и интересно</p>
+        </div>
+
+        <div class="reasons__item">
+            <img alt="" class="reasons__img" src="img/reasons/2reason.png">
+            <p class="reasons__text">Погрузиться в культуру
+                Индии и узнать страну изнутри</p>
+        </div>
+
+        <div class="reasons__item">
+            <img alt="" class="reasons__img" src="img/reasons/3reason.png">
+            <p class="reasons__text">Улучшить здоровье</p>
+        </div>
+    </div>
+
+    <div class="reasons__row-2">
+        <div class="reasons__item">
+            <img alt="" class="reasons__img" src="img/reasons/4reason.png">
+            <p class="reasons__text">Избавиться от стрессов
+                и «перезагрузиться»</p>
+        </div>
+
+        <div class="reasons__item">
+            <img alt="" class="reasons__img" src="img/reasons/5reason.png">
+            <p class="reasons__text">Отдохнуть в хорошей компании,
+                найти единомышленников</p>
+        </div>
+    </div>
+</section>
+
+<section class="activities">
+    <div class="activities__heading">
+        <h3 class="heading-3 activities__title">Что меня ждет в путешествии?</h3>
+        <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+        </svg>
+    </div>
+
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__card">
+                <img alt="" class="slider__img" src="img/slider1/1slide.jpg">
+                <div class="slider__content">
+                    <div class="slider__inner">
+                        <div class="slider__title">Аюрведическое лечение</div>
+                        <div class="slider__text">Всем, кто практикует йогу, рано или поздно захочется побывать в Индии
+                            - в далекой и загадочной стране, где и родилась эта наука о теле и душе.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__card">
+                <img alt="" class="slider__img" src="img/slider1/2slide.jpg">
+                <div class="slider__content">
+                    <div class="slider__inner">
+                        <div class="slider__title">Йогатерапия</div>
+                        <div class="slider__text">Система восстановления здоровья и профилактика заболеваний человека
+                            методами хатха-йоги.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__card">
+                <img alt="" class="slider__img" src="img/slider1/3slide.jpg">
+                <div class="slider__content">
+                    <div class="slider__inner">
+                        <div class="slider__title">Пляжный отдых</div>
+                        <div class="slider__text">Океан, нетронутая природа, традиционный уклад жизни местных жителей,
+                            древние храмы.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</section>
+
+<section class="schedule">
+    <h3 class="heading-3 schedule__title">Расписание</h3>
+
+    <svg class="line">
+        <use xlink:href="img/sprite.svg#line"></use>
+    </svg>
+
+    <div class="schedule__row">
+        <div class="schedule__item">
+            <p class="schedule__date">7-16 июля</p>
+            <p class="schedule__name">"Снижение веса"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+
+        <div class="schedule__item">
+            <p class="schedule__date">7-16 июля</p>
+            <p class="schedule__name">"Погружение в йогу"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+
+        <div class="schedule__item">
+            <p class="schedule__date">11-20 июля</p>
+            <p class="schedule__name">"Хатха-йога"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+
+        <div class="schedule__item">
+            <p class="schedule__date">12-19 июля</p>
+            <p class="schedule__name">"Йогатерапия"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+
+        <div class="schedule__item">
+            <p class="schedule__date">20-29 июля</p>
+            <p class="schedule__name">"Йога-флоу"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+
+        <div class="schedule__item">
+            <p class="schedule__date">5-18 августа</p>
+            <p class="schedule__name">"Цветок лотоса"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+
+        <div class="schedule__item">
+            <p class="schedule__date">5-18 августа</p>
+            <p class="schedule__name">"Тело и ум"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+
+        <div class="schedule__item">
+            <p class="schedule__date">5-18 октября</p>
+            <p class="schedule__name">"Антистресс"</p>
+            <a class="schedule__read-more">Читать подробнее</a>
+            <button class="btn btn--small">Оставить заявку</button>
+        </div>
+    </div>
+</section>
+
+<section class="program">
+    <div class="program__heading">
+        <h3 class="heading-3 program__title">Программа</h3>
+        <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+        </svg>
+    </div>
+
+    <div class="slider slider2">
+        <div class="slider__wrapper">
+            <div class="slider__card">
+                <img alt="" class="slider__img" src="img/slider2/1slide.jpg">
+                <div class="slider__content">
+                    <div class="slider__inner">
+                        <div class="slider__title">День 1</div>
+                        <div class="slider__text">Прилет в Тривандрум, трансфер до йога-центра, знакомство, обзорная
+                            прогулка по Варкале, индивидуальная консультация врача-аюрведиста.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__card">
+                <img alt="" class="slider__img" src="img/slider2/2slide.jpg">
+                <div class="slider__content">
+                    <div class="slider__inner">
+                        <div class="slider__title">День 2</div>
+                        <div class="slider__text">Прилет в Тривандрум, трансфер до йога-центра, знакомство, обзорная
+                            прогулка по Варкале, индивидуальная консультация врача-аюрведиста.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__card">
+                <img alt="" class="slider__img" src="img/slider2/3slide.jpg">
+                <div class="slider__content">
+                    <div class="slider__inner">
+                        <div class="slider__title">День 3</div>
+                        <div class="slider__text">Прилет в Тривандрум, трансфер до йога-центра, знакомство, обзорная
+                            прогулка по Варкале, индивидуальная консультация врача-аюрведиста.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</section>
+
+<section class="ayurveda">
+    <h3 class="heading-3 ayurveda__title">Что такое аюрведа?</h3>
+
+    <svg class="line">
+        <use xlink:href="img/sprite.svg#line"></use>
+    </svg>
+
+    <div class="ayurveda__text">
+        <p class="ayurveda__paragraph-1">Аюрведа - это древнейшая медицинская наука в мире, колоссальная технология
+            восстановления сил, красоты и здоровья. Она зародилась на юге Индии 5000 лет назад и сейчас широко
+            распространилась
+            по миру.</p>
+        <p class="ayurveda__paragraph-2">Аюрведа в последнее время стремительно набирает популярность в России и во всем
+            мире.
+            Аюрведа лечит весь организм в целом, восстанавливает нарушенный баланс между его частями, удаляя саму
+            причину болезни. Цель аюрведического метода лечения - укрепление иммунной системы организма, профилактика и
+            лечение заболеваний с помощью натуральных лекарств, не имеющих побочных эффектов.</p>
+    </div>
+
+    <div class="ayurveda__program">
+        <div class="ayurveda__heading">Программа аюрведы на 5 дней, 7 дней или 12 дней:</div>
+
+        <div class="ayurveda__list">
+            <div class="ayurveda__item">
+                <div class="ayurveda__icon">
+                    <img alt="" class="ayurveda__img" src="img/ayurveda/1.png">
+                </div>
+                <p class="ayurveda__copy">индивидуальная консультация врача-аювредиста
+                    с переводом на русский язык,индивидуальное
+                    наблюдение за курсом лечения врачом-аюрведистом</p>
+            </div>
+
+            <div class="ayurveda__item">
+                <div class="ayurveda__icon">
+                    <img alt="" class="ayurveda__img" src="img/ayurveda/2.png">
+                </div>
+                <p class="ayurveda__copy">масляный массаж всего тела ежедневно
+                    (60 минут) в 2 руки или в 4 руки</p>
+            </div>
+
+            <div class="ayurveda__item">
+                <div class="ayurveda__icon">
+                    <img alt="" class="ayurveda__img" src="img/ayurveda/3.png">
+                </div>
+                <p class="ayurveda__copy">две аюрведические процедуры ежедневно
+                    по Вашему индивидуальному курсу лечения</p>
+            </div>
+
+            <div class="ayurveda__item">
+                <div class="ayurveda__icon">
+                    <img alt="" class="ayurveda__img ayurveda__img--4" src="img/ayurveda/4.png">
+                </div>
+                <p class="ayurveda__copy">все медицинские препараты и масла в ходе
+                    процедур, одежда для процедур
+                </p>
+            </div>
+
+            <div class="ayurveda__item">
+                <div class="ayurveda__icon">
+                    <img alt="" class="ayurveda__img ayurveda__img--5" src="img/ayurveda/5.png">
+                </div>
+                <p class="ayurveda__copy">итоговая консультация врача-аюрведиста
+                    с планом продолжения приема препаратов дома,
+                    рекомендаций по диете</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="center">
+    <div class="center__background"></div>
+
+
+    <div class="center__gallery">
+        <img alt="" class="center__img" src="img/center/1.jpg">
+        <img alt="" class="center__img" src="img/center/2.jpg">
+        <img alt="" class="center__img" src="img/center/3.jpg">
+        <img alt="" class="center__img" src="img/center/4.jpg">
+        <img alt="" class="center__img" src="img/center/5.jpg">
+        <img alt="" class="center__img" src="img/center/6.jpg">
+        <img alt="" class="center__img" src="img/center/7.jpg">
+        <img alt="" class="center__img" src="img/center/8.jpg">
+        <img alt="" class="center__img" src="img/center/9.jpg">
+        <img alt="" class="center__img" src="img/center/10.jpg">
+        <img alt="" class="center__img" src="img/center/11.jpg">
+        <img alt="" class="center__img" src="img/center/12.jpg">
+    </div>
+
+    <div class="center__content">
+        <div class="center__heading">Аюрведический центр</div>
+        <div class="center__location">Индия, штат Керала, город Варкала</div>
+
+        <div class="center__text">
+            <p class="center__paragraph">Мы будем жить не просто в отеле, а в специализированном аюрведическом центре
+                «Алисера». Здесь все проходят лечение или занимаются йогой – это тихое и закрытое для посторонних
+                отдыхающих людей местечко.</p>
+            <p class="center__paragraph">Центр находится на первой пляжной линии в зеленом и спокойном месте, поодаль от
+                шумных баров и магазинов. </p>
+            <p class="center__paragraph">Этот аюрведический центр уже 5 лет администрируют русские специалисты - это
+                значит, что они стараются обеспечить сервис на уровне, привычном русскому туристу. Вас не шокирует грязь
+                и антисанитария Индии, которой многие боятся, не будет недопониманий с персоналом, еда будет
+                адаптирована для привычного вкуса русского туриста и т.д. В центре постоянно есть переводчик с
+                английского на русский язык. Отдыхают здесь в основном гости из России – поэтому всегда можно найти
+                интересное общение, если вы приехали один или маленькой компанией. </p>
+        </div>
+
+        <div class="center__services">
+            <div class="center__column-1">
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">комнаты категории «стандарт» и «повышенной комфортности» с санузлом и
+                        горячей водой
+                    </div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">собственная территория с пальмами, гамаками и зонами для отдыха</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">бассейн</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">крытый зал для йоги</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">вегетарианское аюрведическое кафе</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">аюрведические кабинеты</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">собственный пляж</div>
+                </div>
+            </div>
+
+            <div class="center__column-2">
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">Wi-Fi на всей территории бесплатно</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">русскоговорящий администратор</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">туристический офис - билеты, экскурсии и т.д.</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">круглосуточно врач</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">аренда скутеров</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">заказ такси</div>
+                </div>
+
+                <div class="center__item">
+                    <img alt="" class="center__icon" src="img/logo-small.png">
+                    <div class="center__copy">сейф</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="instructors">
+    <div class="instructors__background"></div>
+
+    <div class="instructors__heading">
+        <h3 class="heading-3 instructors__title">Инструкторы</h3>
+
+        <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+        </svg>
+    </div>
+
+    <div class="swiper-container instructors__slider instructors__slider--1">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor1.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Юлия Ухваткина</div>
+                            <div class="instructors__speciality">
+                                <p>Хатха-йога </p>
+                                <p>Шри-шри йога</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Международный индийский сертификат учителя йоги: VED VIGNAN MAHA VIDYA PEETH.</p>
+                            <p>Ежегодно проходит курсы повышения квалификации в России и в Индии.</p>
+                            <p>Переводчик с английского языка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor2.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Анна Андреева</div>
+                            <div class="instructors__speciality">
+                                <p>Хатха-йога</p>
+                                <p>Йогатерапия</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Практикует йогу более 10 лет, в качестве преподавателя - 7 лет.</p>
+                            <p>Ежегодно проходит курсы повышения квалификации в России и в Индии.</p>
+                            <p>Прошла обучение ﻿в разных школах йоги​ в Индии и в России у многих известных
+                                учителей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor3.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Елена Беляева</div>
+                            <div class="instructors__speciality">
+                                <p>Йога Айенгара</p>
+                                <p>Йога в гамаках</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Практикует йогу более 8 лет, в качестве преподавателя - 6 лет.</p>
+                            <p>Ежегодно проходит курсы повышения квалификации в России и в Индии.</p>
+                            <p>Прошла обучение ﻿в разных школах йоги​ в Индии и в России у многих известных
+                                учителей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor4.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Ярослав Петров</div>
+                            <div class="instructors__speciality">
+                                <p>Хатха-йога</p>
+                                <p>Гималайская йога</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Преподает йогу и медитацию с 2009 года.</p>
+                            <p>Прошёл обучение в Kaivalyadham Yoga Institute, Махараштра, Индия.</p>
+                            <p>Участник многих лагерей по медитации Shiv Yog Foundation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor5.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Карина Ким</div>
+                            <div class="instructors__speciality">
+                                <p>Шри шри йога</p>
+                                <p>"Антистресс"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Преподает йогу более 10 лет.</p>
+                            <p>Международный индийский сертификат учителя: VED VIGNAN MAHA VIDYA PEETH. Sri Sri Yoga
+                                Training Certificate.</p>
+                            <p>Проходила обучение в России и в Индии.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="swiper-container instructors__slider instructors__slider--2">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor6.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Сем Джон</div>
+                            <div class="instructors__speciality">
+                                <p>Индия. Шри-шри йога.</p>
+                                <p>Курс «Счастье» </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Более 10 лет ведет тренинги по йоге по всей Индии. </p>
+                            <p>С 2009-го года преподаватель йоги международного фонда Art of living.</p>
+                            <p>Обучает пранаяме, дыхательным техникам и медитации.
+                                Читает лекции о теории и философии йоги.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor7.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Юлия Сорокина</div>
+                            <div class="instructors__speciality">
+                                <p>Йога Айенгара</p>
+                                <p>Йога в гамаках</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Международный сертификат преподавателя йоги и антистрессовый программ VED VIGNAN MAHA
+                                VIDYA PEETH.</p>
+                            <p>Проходила обучение в России, Европе и в Индии.</p>
+                            <p>Полный курс подготовки преподавателей по направлению «Универсальная йога».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor8.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Тихон Пеняев</div>
+                            <div class="instructors__speciality">
+                                <p>Йогатерапия</p>
+                                <p>Шри шри йога</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Сертифицированный инструктор по Шри Шри Йоге.</p>
+                            <p>Международный индийский сертификат учителя: VED VIGNAN MAHA VIDYA PEETH. Sri Sri Yoga
+                                Training Certificate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor9.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Марина Мочалова</div>
+                            <div class="instructors__speciality">
+                                <p>Хатха-йога</p>
+                                <p>Йогатерапия</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Международный сертификат преподавателя йоги и антистрессовый программ.</p>
+                            <p>Проходила обучение в России, Европе и в Индии.</p>
+                            <p>Полный курс подготовки преподавателей по направлению «Универсальная йога».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide instructors__card">
+                <img alt="Instructor's photo" class="instructors__photo" src="img/instructors/instructor10.jpg">
+                <div class="instructors__content">
+                    <div class="instructors__left">
+                        <div class="instructors__wrap">
+                            <div class="instructors__name">Кристина Ли</div>
+                            <div class="instructors__speciality">
+                                <p>Хатха-йога</p>
+                                <p>Йога Айенгара</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructors__right">
+                        <div class="instructors__about">
+                            <p>Сертифицированный преподаватель международного альянса йоги Yoga Alliance
+                                International.</p>
+                            <p>Проходила обучение в России, Европе и в Индии.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+
+<section class="testimonials">
+
+    <div class="testimonials__heading">
+        <h3 class="heading-3 testimonials__title">Отзывы участников</h3>
+
+        <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+        </svg>
+    </div>
+
+
+    <div class="swiper-container testimonials__slider">
+        <div class="swiper-wrapper testimonials__wrapper">
+
+            <div class="swiper-slide testimonials__slide">
+                <div class="testimonials__card">
+                    <div class="testimonials__shape">
+                        <img alt="" class="testimonials__img testimonials__img--1" src="img/testimonial1.jpg">
+                    </div>
+                    <div class="testimonials__content">
+                        <p class="testimonials__name">Дмитрий Жигарев</p>
+                        <a class="testimonials__link" href="https://vk.com/zhigarev_dmitrii">vk.com/zhigarev_dmitrii</a>
+                        <p class="testimonials__text">Мне, как всегда в этой жизни везет на встречи с интересными
+                            людьми.
+                            Было очень приятно попасть в такую хорошую компанию искренних, позитивных и интересных
+                            людей.
+                            Индия классная страна… интересно было соприкоснуться с такой культурой. Иногда она шокирует,
+                            иногда вызывают улыбку и удивление, но я пожелал бы каждому побывать в этой экстраординарной
+                            стране. Я отдохнул и душой и телом. Постараюсь приехать туда еще не раз…</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide testimonials__slide">
+                <div class="testimonials__card">
+                    <div class="testimonials__shape">
+                        <img alt="" class="testimonials__img testimonials__img--2" src="img/testimonial2.jpg">
+                    </div>
+                    <div class="testimonials__content">
+                        <p class="testimonials__name">Светлана Елисеева</p>
+                        <a class="testimonials__link" href="https://vk.com/id546502404">vk.com/id546502404</a>
+                        <p class="testimonials__text">За неделю охватили многое для тела и души . Разминки , растяжки ,
+                            суставная гимнастика , йога, йоготерапия. Много дышали на свежем воздухе - пранаямы. Очень
+                            понравился тренинг Счастье. Советую пройти его каждому человеку, это очищает сознание и
+                            снимает
+                            межличностные границы. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide testimonials__slide">
+                <div class="testimonials__card">
+                    <div class="testimonials__shape">
+                        <img alt="" class="testimonials__img testimonials__img--3" src="img/testimonial3.jpg">
+                    </div>
+                    <div class="testimonials__content">
+                        <p class="testimonials__name">Алиса Ильина</p>
+                        <a class="testimonials__link" href="https://vk.com/id188261825">vk.com/id188261825</a>
+                        <p class="testimonials__text">Благодарю Дом Солнца и всю нашу удивительную компанию за тур
+                            "Здоровая
+                            спина". Мне не просто понравилось, - я получила намного больше чем ожидала)) Грамотные и
+                            очень
+                            эффективные практики для здоровья и хорошего настроения, чистейшее море и великолепная
+                            природа,
+                            насыщенная и интересная программа, вдохновляющее общение и очень приятное послевкусие)) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+            <svg class="next">
+                <use xlink:href="img/sprite.svg#next"></use>
+            </svg>
+        </div>
+        <div class="swiper-button-prev">
+            <svg class="prev">
+                <use xlink:href="img/sprite.svg#return"></use>
+            </svg>
+        </div>
+    </div>
+</section>
+
+
+<script src="swiper/swiper.min.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>

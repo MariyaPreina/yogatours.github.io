@@ -1,0 +1,50 @@
+.btn {
+
+
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background-color: $color-hover;
+    border: 2px solid $color-hover;
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #c8763b;
+    border: 2px solid #c8763b;
+    box-shadow: 2px -2px 100px -27px rgba(0,0,0,0.64);
+  }
+
+  &--big {
+    justify-self: center;
+    font-size: 1.8rem;
+    border: 2px solid $color-white;
+    color: $color-white;
+    margin-bottom: 14rem;
+    padding: 2.2rem 7.4rem;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+    border: 2px solid $color-hover;
+    padding: 1.1rem 3.2rem;
+    color: $color-hover;
+    margin-top: 1.7rem;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

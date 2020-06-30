@@ -1,0 +1,38 @@
+.activities {
+  grid-column: full-start / full-end;
+  grid-row: reasons-end / activities-end;
+}
+
+.program {
+  grid-column: full-start / full-end;
+  grid-row: schedule-end / program-end;
+}
+
+.activities,
+.program {
+
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 2rem) minmax(min-content, 1rem) [col-start] minmax(min-content, 94rem) [col-end] minmax(min-content, 1rem) minmax(min-content, 2rem) 1fr;
+  grid-template-rows: minmax(min-content, 22rem) minmax(min-content, 27rem) minmax(min-content, 26rem);
+
+
+  &__heading {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    background-color: $color-background;
+    text-align: center;
+
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+  }
+
+  .line {
+    justify-self: center;
+    margin-bottom: 8rem;
+  }
+}
+
+
