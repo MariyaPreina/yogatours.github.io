@@ -8,7 +8,7 @@ const testimonials = document.querySelector('.testimonials__slider');
 let swiper = new Swiper(slider, {
     slidesPerView: 1,
     spaceBetween: 30,
-    slideClass: 'slider__card',
+    slideClass: 'slider__figure',
     wrapperClass: 'slider__wrapper',
     centeredSlides: true,
     autoplay: {
@@ -20,16 +20,12 @@ let swiper = new Swiper(slider, {
         clickable: true,
     },
     loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
 
 let swiper2 = new Swiper(slider2, {
     slidesPerView: 1,
     spaceBetween: 30,
-    slideClass: 'slider__card',
+    slideClass: 'slider__figure',
     wrapperClass: 'slider__wrapper',
     centeredSlides: true,
     autoplay: {
@@ -41,10 +37,6 @@ let swiper2 = new Swiper(slider2, {
         clickable: true,
     },
     loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
 
 let swiper__inst1 = new Swiper(instructors1, {

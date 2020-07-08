@@ -6,8 +6,13 @@
   background-position: center;
 
   display: grid;
-  grid-template-columns: 1fr minmax(min-content, 3rem) [inner-start] minmax(min-content, 7rem)  repeat(10, minmax(min-content, 8rem))  minmax(min-content, 7rem) [inner-end] minmax(min-content, 3rem) 1fr;
-  grid-template-rows: [contact-start] minmax(min-content, 14rem) [contact-end] minmax(min-content, max-content)[header-end];
+  grid-template-columns: 1fr minmax(min-content, 3rem) [inner-start] minmax(min-content, 94rem) [inner-end] minmax(min-content, 3rem) 1fr;
+  grid-template-rows: [contact-start] min-content [contact-end] minmax(min-content, max-content)[header-end];
+  padding-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr [inner-start] 80% [inner-end] 1fr;
+  }
 
 
   &__contact-bar {
@@ -21,6 +26,10 @@
 
   &__logo {
     height: 10.4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 8.4rem;
+    }
   }
 
   &__contacts {
@@ -35,12 +44,21 @@
     font-weight: 400;
     align-self: flex-end;
     margin-bottom: 1.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
+
   }
 
   &__phone {
     font-size: 2rem;
     font-weight: 700;
     align-self: flex-end;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__row {
@@ -52,6 +70,8 @@
     .heading-1 {
       margin-top: 15.5rem;
       margin-bottom: 4.5rem;
+
+
     }
 
     .heading-4 {
@@ -63,42 +83,3 @@
   }
 }
 
-/* ===SOCIAL=== */
-.social {
-  display: flex;
-  justify-content: center;
-
- &__item {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 2.6rem;
-   height: 2.6rem;
-   margin-right: 1rem;
-
-   border: 1px solid $color-white;
-   border-radius: 50%;
-   background-color: transparent;
-   transition: all .2s;
-
-   &:hover {
-     background-color: $color-hover;
-     border: $color-hover;
-     box-shadow: 2px -2px 100px -27px rgba(0,0,0,0.64);
-   }
-
-   &:active {
-     border: $color-hover;
-     .social__icon {
-       fill: rgba(51, 51, 51, 0.57);
-     }
-   }
- }
-
-  &__icon {
-    display: block;
-    fill: $color-white;
-    height: 1.2rem;
-    transition: fill .2s;
-  }
-}

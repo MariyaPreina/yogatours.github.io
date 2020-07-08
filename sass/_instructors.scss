@@ -6,12 +6,25 @@
   grid-template-columns: [full-start] 1fr minmax(min-content, 3rem) [col-start] minmax(min-content, 94rem) [col-end] minmax(min-content, 3rem) 1fr [full-end];
   grid-template-rows: minmax(min-content, 21rem) minmax(min-content, 54rem) minmax(min-content, 39rem) minmax(min-content, 18rem);
 
-  margin-bottom: 8rem;
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: [full-start] 1fr [col-start] 80% [col-end] 1fr [full-end];
+
+    grid-row-gap: 3rem;
+    background-color: $color-background;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+  }
+
 
   &__background {
     grid-column: full-start / full-end;
     grid-row: 1 / 4;
     background-color: $color-background;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__heading {
@@ -20,10 +33,18 @@
     text-align: center;
     align-content: center;
     margin: 7.5rem 0;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 3rem;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__slider {
@@ -32,6 +53,12 @@
     width: 94rem;
     height: 54rem;
 
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
     &--1 {
       grid-row: 2 / 3;
       margin-bottom: 1.3rem;
@@ -39,22 +66,35 @@
 
     &--2 {
       grid-row: 3 / 5;
+
+      @media only screen and (max-width: $bp-small) {
+        grid-row: 3 / 4;
+      }
     }
   }
 
   &__card {
     text-align: center;
     position: relative;
+    overflow: hidden;
 
     display: grid;
     grid-template-rows: minmax(min-content, 37rem) minmax(min-content, 17rem);
+
   }
 
   &__photo {
     grid-row: 1 / -1;
-    overflow: hidden;
+
     position: absolute;
     width: 100%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      height: auto;
+      min-height: 250px;
+      min-width: 450px;
+    }
 
     top: 50%;
     left: 50%;
@@ -69,8 +109,13 @@
     width: 94rem;
     height: 17rem;
 
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      height: 100%;
+    }
+
     display: grid;
-    grid-template-columns: minmax(min-content, 35rem) minmax(min-content, 59rem);
+    grid-template-columns: 35% 65%;
 
     background-color: rgba(68, 68, 68, .5);
 
@@ -89,6 +134,10 @@
     font-family: inherit;
     color: $color-white;
     margin-left: 6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 4rem;
+    }
   }
 
   &__wrap {
@@ -100,6 +149,10 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
   }
 
   &__speciality {
@@ -123,6 +176,12 @@
     color: $color-white;
     margin-left: 5rem;
     margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 3rem;
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
   }
 
   .swiper-pagination-bullet-active {

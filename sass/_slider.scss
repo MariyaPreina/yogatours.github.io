@@ -1,4 +1,7 @@
 .slider {
+  grid-row: 2 / 4;
+  width: 100%;
+  max-width: 94rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -6,11 +9,9 @@
   list-style: none;
   padding: 0;
   z-index: 1;
+  font-family: inherit;
+  color: $color-white;
 
-  grid-column: 1 / -1;
-  grid-row: 2 / 4;
-  width: 100%;
-  height: 100%;
 
   &__wrapper {
     position: relative;
@@ -22,86 +23,72 @@
     box-sizing: content-box;
   }
 
-
-  &__card {
-    text-align: center;
+  &__figure {
     position: relative;
     flex-shrink: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 
     transition-property: transform;
+    display: grid;
+  }
+
+  &__card {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+
+    display: grid;
+
   }
 
   &__img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
     overflow: hidden;
-    position: absolute;
-    width: 50%;
-    height: auto;
-    min-height: 55rem;
-    min-width: 78rem;
+  }
 
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-
-    transform: translate3d(-50%, -50%, 0);
+  &__picture {
+    width: 100%;
   }
 
   &__content {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background-color: rgba($color-gray-dark-3, .5);
+
     display: grid;
+    align-items: center;
     justify-items: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    min-height: 55rem;
-    min-width: 78rem;
-
-    background-color: rgba(68, 68, 68, .6);
-    background-size: cover;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-
-    transform: translate3d(-50%, -50%, 0);
   }
 
-  &__inner {
-    border: 3px solid rgba($color-white, .4);
-    height: 90%;
+  &__border {
     width: 93%;
-
+    height: 90%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgba($color-white, .5);
   }
 
-  &__title {
-    font-family: inherit;
+  &__name {
     font-size: 2.6rem;
     font-weight: 500;
-    color: $color-white;
     text-transform: uppercase;
     margin-bottom: 2.6rem;
   }
 
   &__text {
-    font-family: inherit;
     font-size: 1.8rem;
     font-weight: 400;
-    color: $color-white;
-    height: 6.2rem;
-    width: 48rem;
+    text-align: center;
+    width: 60%;
+    line-height: 1.3;
   }
 
   .swiper-pagination-bullet-active {
     background: $testimonials-link;
   }
 
-  .swiper-button-next, .swiper-button-prev {
-    color: $color-hover;
-  }
 }

@@ -38,21 +38,21 @@
 
         <button class="btn btn--big">Подать заявку</button>
 
-        <div class="social">
-            <a class="social__item" href="#" target="_blank">
-                <svg class="social__icon">
+        <div class="social social--white">
+            <a class="social__item social__item--white" href="#" target="_blank">
+                <svg class="social__icon social__icon--white">
                     <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
             </a>
 
-            <a class="social__item" href="#" target="_blank">
-                <svg class="social__icon">
+            <a class="social__item social__item--white" href="#" target="_blank">
+                <svg class="social__icon social__icon--white">
                     <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
             </a>
 
-            <a class="social__item" href="#" target="_blank">
-                <svg class="social__icon">
+            <a class="social__item social__item--white" href="#" target="_blank">
+                <svg class="social__icon social__icon--white">
                     <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
             </a>
@@ -75,14 +75,14 @@
 
         <div class="about__list">
             <div class="about__item">
-                <svg class="about__icon">
+                <svg class="about__icon about__icon--yoga">
                     <use xlink:href="img/sprite.svg#yoga"></use>
                 </svg>
                 <span class="about__item-name">Йога</span>
             </div>
 
             <div class="about__item">
-                <svg class="about__icon">
+                <svg class="about__icon about__icon--sea">
                     <use xlink:href="img/sprite.svg#wave"></use>
                 </svg>
                 <span class="about__item-name">Море</span>
@@ -141,55 +141,69 @@
 </section>
 
 <section class="activities">
-    <div class="activities__heading">
-        <h3 class="heading-3 activities__title">Что меня ждет в путешествии?</h3>
-        <svg class="line">
-            <use xlink:href="img/sprite.svg#line"></use>
-        </svg>
-    </div>
-
-    <div class="slider">
-        <div class="slider__wrapper">
-            <div class="slider__card">
-                <img alt="" class="slider__img" src="img/slider1/1slide.jpg">
-                <div class="slider__content">
-                    <div class="slider__inner">
-                        <div class="slider__title">Аюрведическое лечение</div>
-                        <div class="slider__text">Всем, кто практикует йогу, рано или поздно захочется побывать в Индии
-                            - в далекой и загадочной стране, где и родилась эта наука о теле и душе.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider__card">
-                <img alt="" class="slider__img" src="img/slider1/2slide.jpg">
-                <div class="slider__content">
-                    <div class="slider__inner">
-                        <div class="slider__title">Йогатерапия</div>
-                        <div class="slider__text">Система восстановления здоровья и профилактика заболеваний человека
-                            методами хатха-йоги.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider__card">
-                <img alt="" class="slider__img" src="img/slider1/3slide.jpg">
-                <div class="slider__content">
-                    <div class="slider__inner">
-                        <div class="slider__title">Пляжный отдых</div>
-                        <div class="slider__text">Океан, нетронутая природа, традиционный уклад жизни местных жителей,
-                            древние храмы.
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="activities__wrapper"></div>
+    <div class="activities__inner">
+        <div class="activities__heading">
+            <h3 class="heading-3 activities__title">Что меня ждет в путешествии?</h3>
+            <svg class="line">
+                <use xlink:href="img/sprite.svg#line"></use>
+            </svg>
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-container slider">
+            <div class="swiper-wrapper slider__wrapper">
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+                <div class="swiper-slide slider__figure">
+                    <div class="slider__card">
+                        <div class="slider__img">
+                            <img alt="" class="slider__picture" src="img/slider1/1slide.jpg">
+                        </div>
+                        <div class="slider__content">
+                            <div class="slider__border">
+                                <p class="slider__name">аюрведическое лечение</p>
+                                <p class="slider__text">Всем, кто практикует йогу, рано или поздно захочется побывать в
+                                    Индии - в далекой и загадочной стране, где и родилась эта наука о теле и душе.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slider__figure">
+                    <div class="slider__card">
+                        <div class="slider__img">
+                            <img alt="" class="slider__picture" src="img/slider1/2slide.jpg">
+                        </div>
+                        <div class="slider__content">
+                            <div class="slider__border">
+                                <p class="slider__name">Йога-программа</p>
+                                <p class="slider__text">Кроме физических упражнений — асан, мы будем давать множество
+                                    дыхательных практик, рассказывать о философии йоги.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slider__figure">
+                    <div class="slider__card">
+                        <div class="slider__img">
+                            <img alt="" class="slider__picture" src="img/slider1/3slide.jpg">
+                        </div>
+                        <div class="slider__content">
+                            <div class="slider__border">
+                                <p class="slider__name">путешествие</p>
+                                <p class="slider__text">Океан, нетронутая природа, традиционный уклад жизни местных
+                                    жителей, древние храмы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
+
 
 </section>
 
@@ -260,54 +274,64 @@
 </section>
 
 <section class="program">
-    <div class="program__heading">
-        <h3 class="heading-3 program__title">Программа</h3>
-        <svg class="line">
-            <use xlink:href="img/sprite.svg#line"></use>
-        </svg>
-    </div>
-
-    <div class="slider slider2">
-        <div class="slider__wrapper">
-            <div class="slider__card">
-                <img alt="" class="slider__img" src="img/slider2/1slide.jpg">
-                <div class="slider__content">
-                    <div class="slider__inner">
-                        <div class="slider__title">День 1</div>
-                        <div class="slider__text">Прилет в Тривандрум, трансфер до йога-центра, знакомство, обзорная
-                            прогулка по Варкале, индивидуальная консультация врача-аюрведиста.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider__card">
-                <img alt="" class="slider__img" src="img/slider2/2slide.jpg">
-                <div class="slider__content">
-                    <div class="slider__inner">
-                        <div class="slider__title">День 2</div>
-                        <div class="slider__text">Прилет в Тривандрум, трансфер до йога-центра, знакомство, обзорная
-                            прогулка по Варкале, индивидуальная консультация врача-аюрведиста.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider__card">
-                <img alt="" class="slider__img" src="img/slider2/3slide.jpg">
-                <div class="slider__content">
-                    <div class="slider__inner">
-                        <div class="slider__title">День 3</div>
-                        <div class="slider__text">Прилет в Тривандрум, трансфер до йога-центра, знакомство, обзорная
-                            прогулка по Варкале, индивидуальная консультация врача-аюрведиста.
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="program__wrapper"></div>
+    <div class="program__inner">
+        <div class="program__heading">
+            <h3 class="heading-3 program__title">Программа</h3>
+            <svg class="line">
+                <use xlink:href="img/sprite.svg#line"></use>
+            </svg>
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-container slider slider2">
+            <div class="swiper-wrapper slider__wrapper">
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+                <div class="swiper-slide slider__figure">
+                    <div class="slider__card">
+                        <div class="slider__img">
+                            <img alt="" class="slider__picture" src="img/slider2/1slide.jpg">
+                        </div>
+                        <div class="slider__content">
+                            <div class="slider__border">
+                                <p class="slider__name">1 день</p>
+                                <p class="slider__text">Прилет в Тривандрум, трансфер до йога-центра, знакомство, обзорная прогулка по Варкале, индивидуальная консультация врача-аюрведиста.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slider__figure">
+                    <div class="slider__card">
+                        <div class="slider__img">
+                            <img alt="" class="slider__picture" src="img/slider2/2slide.jpg">
+                        </div>
+                        <div class="slider__content">
+                            <div class="slider__border">
+                                <p class="slider__name">2 день</p>
+                                <p class="slider__text">Обзорная экскурсия, посещение океонариума, поход в храм (молитва, медитация), вечерняя практика.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slider__figure">
+                    <div class="slider__card">
+                        <div class="slider__img">
+                            <img alt="" class="slider__picture" src="img/slider2/3slide.jpg">
+                        </div>
+                        <div class="slider__content">
+                            <div class="slider__border">
+                                <p class="slider__name">3 день</p>
+                                <p class="slider__text">Выезд на экскурсию в заповедник Понмуди, прогулка по тропическим джунглям, купание в горном водопаде, вечерняя практика.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
 </section>
@@ -398,6 +422,13 @@
         <img alt="" class="center__img" src="img/center/10.jpg">
         <img alt="" class="center__img" src="img/center/11.jpg">
         <img alt="" class="center__img" src="img/center/12.jpg">
+    </div>
+
+    <div class="center__gallery--small">
+        <img alt="" class="center__img" src="img/center/1.jpg">
+        <img alt="" class="center__img" src="img/center/2.jpg">
+        <img alt="" class="center__img" src="img/center/3.jpg">
+        <img alt="" class="center__img" src="img/center/4.jpg">
     </div>
 
     <div class="center__content">
@@ -838,6 +869,442 @@
         </div>
     </div>
 </section>
+
+<section class="why-us">
+
+    <div class="why-us__heading">
+        <h3 class="heading-3 why-us__title">Почему 1620 туристов выбрали нас</h3>
+
+        <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+        </svg>
+    </div>
+
+    <div class="why-us__inner">
+        <div class="why-us__card">
+            <img alt="" class="why-us__icon" src="img/icons/hourglass.png">
+
+            <div class="why-us__content">
+                <p class="why-us__caption">Опыт</p>
+                <p class="why-us__text">За 5 лет работы мы открыли
+                    мир йоги для более чем
+                    1620 туристов</p>
+            </div>
+        </div>
+
+        <div class="why-us__card">
+            <img alt="" class="why-us__icon" src="img/icons/building.png">
+
+            <div class="why-us__content">
+                <p class="why-us__caption">С нами спокойно</p>
+                <p class="why-us__text">Русскоговорящее сопровождение – инструктор и переводчик будет с вами в течении
+                    всего тура
+                </p>
+            </div>
+        </div>
+
+        <div class="why-us__card">
+            <img alt="" class="why-us__icon" src="img/icons/bag.png">
+
+            <div class="why-us__content">
+                <p class="why-us__caption">Мы — профессионалы</p>
+                <p class="why-us__text">Мы — самая большая компания в России, которая занимается исключительно
+                    йога-турами</p>
+            </div>
+        </div>
+
+        <div class="why-us__card">
+            <img alt="" class="why-us__icon" src="img/icons/money_box.png">
+
+            <div class="why-us__content">
+                <p class="why-us__caption">С нами выгодно</p>
+                <p class="why-us__text">Наш принцип – делать </p>
+                <p class="why-us__text">цены на йога-туры доступными для всех</p>
+            </div>
+        </div>
+
+        <div class="why-us__card">
+            <img alt="" class="why-us__icon" src="img/icons/protection.png">
+
+            <div class="why-us__content">
+                <p class="why-us__caption">С нами безопасно</p>
+                <p class="why-us__text">Вы получаете весь пакет официальных туристических документов</p>
+            </div>
+        </div>
+
+        <div class="why-us__card">
+            <img alt="" class="why-us__icon" src="img/icons/plane.png">
+
+            <div class="why-us__content">
+                <p class="why-us__caption">С нами удобно</p>
+                <p class="why-us__text">Мы поможем забронировать авиа-билеты</p>
+                <p class="why-us__text">и оформить визу</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section class="participation">
+    <div class="participation__heading">
+        <h3 class="heading-3 participation__title">Как мы работаем</h3>
+
+        <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+        </svg>
+
+        <p class="participation__sub-title">Возможно оформление йога-тура дистанционно из любого города</p>
+    </div>
+
+    <div class="participation__inner">
+        <div class="participation__card">
+            <div class="participation__img">
+                <img alt="" class="participation__icon" src="img/icons/notebook.png">
+            </div>
+
+            <svg class="participation__arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+
+            <div class="participation__caption">
+                <p class="participation__text">Вы оставляете заявку</p>
+                <a class="participation__link" href="#">Отправить заявку</a>
+            </div>
+        </div>
+
+        <div class="participation__card">
+            <div class="participation__img">
+                <img alt="" class="participation__icon" src="img/icons/phone.png">
+            </div>
+
+            <svg class="participation__arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+
+            <div class="participation__caption">
+                <p class="participation__text">Мы связываемся с вами</p>
+            </div>
+        </div>
+
+        <div class="participation__card">
+            <div class="participation__img">
+                <img alt="" class="participation__icon" src="img/icons/file.png">
+            </div>
+
+            <svg class="participation__arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+
+            <div class="participation__caption">
+                <p class="participation__text">Подписываем договор и оформляем документы</p>
+            </div>
+        </div>
+
+        <div class="participation__card">
+            <div class="participation__img">
+                <img alt="" class="participation__icon" src="img/icons/wallet.png">
+            </div>
+
+            <svg class="participation__arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+
+            <div class="participation__caption">
+                <p class="participation__text">Вы оплачиваете аванс 6 000 рублей в банке</p>
+            </div>
+        </div>
+
+        <div class="participation__card">
+            <div class="participation__img">
+                <img alt="" class="participation__icon" src="img/icons/ticket.png">
+            </div>
+
+            <svg class="participation__arrow">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+
+            <div class="participation__caption">
+                <p class="participation__text">Покупаете билеты и оформляете визу (возможно через нас)</p>
+            </div>
+        </div>
+
+        <div class="participation__card participation__card--sm">
+            <div class="participation__img">
+                <img alt="" class="participation__icon" src="img/icons/meeting.png">
+            </div>
+
+            <div class="participation__caption">
+                <p class="participation__text">Вас встречают в аэропорту Тривандрум с табличкой</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<section class="prices">
+    <div class="prices__inner">
+        <div class="prices__heading">
+            <h3 class="heading-3 prices__title">Стоимость</h3>
+
+            <svg class="line">
+                <use xlink:href="img/sprite.svg#line"></use>
+            </svg>
+        </div>
+
+        <div class="prices__card">
+            <div class="prices__tours">
+                <div class="prices__item"><span>Тур 14 дней/13 ночей,</span> программа аюрведы на 5 дней</div>
+                <div class="prices__item prices__item--orange"><span>700</span> евро</div>
+
+                <div class="prices__item"><span>Тур 14 дней/13 ночей,</span> программа аюрведы на 7 дней</div>
+                <div class="prices__item prices__item--orange"><span>770</span> евро</div>
+
+                <div class="prices__item"><span>Тур 14 дней/13 ночей,</span> программа аюрведы на 12 дней</div>
+                <div class="prices__item prices__item--orange"><span>960</span> евро</div>
+            </div>
+            <div class="prices__learn-more">
+                <div class="prices__offer">Узнайте о спецпредложении эконом-тур за 250 евро</div>
+                <div class="btn btn--small">Узнать</div>
+            </div>
+        </div>
+
+        <div class="prices__contain">
+            <div class="prices__included">
+                <div class="prices__caption">В стоимость включено:</div>
+                <ul class="prices__list">
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">проживание двухместное в комнате "стандарт" с санузлом и горячей
+                            водой,</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">питание трехразовое вегетарианское,</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">йога-программа - 3 занятия йоги в день (практика и теория),</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">аюрведическая программа на 5 дней, 7 дней или 12 дней,</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">индивидуальный трансфер на такси из аэропорта до отеля и обратно,</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">сопровождение группы русскоговорящим преподавателем,</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">теоретические занятия по аюрведе,</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p class="prices__content">две экскурсии</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="prices__not-included">
+                <div class="prices__caption">В стоимость <span>НЕ</span> входит:</div>
+
+                <ul class="prices__list">
+                    <li class="prices__list-item">
+                        <svg class="cross">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                        </svg>
+                        <p class="prices__content">перелет Москва-Тируванантапурам-Москва (от 20 000 рублей)</p>
+                    </li>
+
+                    <li class="prices__list-item">
+                        <svg class="cross">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                        </svg>
+                        <p class="prices__content">виза (3000 рублей)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="prices__payment">Стоимость рассчитывается в евро из-за нестабильного курса рубля. Оплата на месте
+            возможна в любой валюте – рубли, евро, доллары.
+        </div>
+    </div>
+</section>
+
+<section class="safeguards">
+    <div class="safeguards__heading">
+        <h3 class="heading-3 safeguards__title">Гарантия безопасности</h3>
+
+        <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+        </svg>
+    </div>
+
+    <div class="safeguards__text">Мы понимаем, что многие туристы опасаются оплачивать туры и боятся, что тур отменится.
+        Поэтому мы сделали бронирование безопасным для вас. Чтобы забронировать место на йога-туре необходимо любым
+        удобным способом внести аванс 6000 рублей. Оставшуюся сумму вы оплачиваете в любой валюте (рубли, евро, доллары)
+        по прибытию в отель, после заселения.
+    </div>
+
+    <div class="safeguards__caption">Вы получите полный набор документов:</div>
+
+    <div class="safeguards__documents">
+        <div class="safeguards__item">
+            <div class="safeguards__img">
+                <img alt="" class="safeguards__pic" src="img/documents/contract.jpg">
+            </div>
+            <p class="safeguards__name">Договор на оказание услуг</p>
+        </div>
+
+        <div class="safeguards__item">
+            <div class="safeguards__img">
+                <img alt="" class="safeguards__pic" src="img/documents/check.jpg">
+            </div>
+            <p class="safeguards__name">Чек об оплате аванса</p>
+        </div>
+
+        <div class="safeguards__item">
+            <div class="safeguards__img">
+                <img alt="" class="safeguards__pic" src="img/documents/booking.jpg">
+            </div>
+            <p class="safeguards__name">Бронь отеля</p>
+        </div>
+
+        <div class="safeguards__item">
+            <div class="safeguards__img">
+                <img alt="" class="safeguards__pic" src="img/documents/sertificate.jpg">
+            </div>
+            <p class="safeguards__name">Туристический сертификат</p>
+        </div>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="contacts__inner">
+        <div class="contacts__details">
+            <div class="contacts__title">Контакты</div>
+            <div class="contacts__social">
+                <div class="contacts__caption">Мы в социальных сетях:</div>
+                <div class="social social--orange">
+                    <a class="social__item social__item--orange" href="#" target="_blank">
+                        <svg class="social__icon social__icon--orange">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item social__item--orange" href="#" target="_blank">
+                        <svg class="social__icon social__icon--orange">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item social__item--orange" href="#" target="_blank">
+                        <svg class="social__icon social__icon--orange">
+                            <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts__phone">
+                <div class="contacts__caption">Телефон:</div>
+                <div class="contacts__subtitle">Звонки со всех номеров РФ бесплатно</div>
+                <div class="contacts__number">8 800 505 35 87</div>
+            </div>
+        </div>
+
+        <div class="contacts__offices">
+            <div class="contacts__caption">Офисы:</div>
+
+            <div class="contacts__card">
+                <div class="contacts__map">
+                    <a href="https://yandex.ru/maps/?um=constructor%3A8b4493a8e0bd75b8013d6e5b3dfb61dfb1321498941713e61864ab5477165462&amp;source=constructorStatic"
+                       target="_blank"><img
+                            alt=""
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A8b4493a8e0bd75b8013d6e5b3dfb61dfb1321498941713e61864ab5477165462&amp;width=200&amp;height=150&amp;lang=ru_RU"
+                            style="border: 0;"/></a>
+                </div>
+
+                <p class="contact__address">Екатеринбург, ул Вайнера 60</p>
+            </div>
+
+            <div class="contacts__card">
+                <div class="contacts__map">
+                    <a href="https://yandex.ru/maps/?um=constructor%3A2e3e8fc0b79a7ddb3d732772530ff1eed5c171000fe0a7b994969a92768e6857&amp;source=constructorStatic"
+                       target="_blank"><img
+                            alt=""
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A2e3e8fc0b79a7ddb3d732772530ff1eed5c171000fe0a7b994969a92768e6857&amp;width=200&amp;height=150&amp;lang=ru_RU"
+                            style="border: 0;"/></a>
+                </div>
+
+                <p class="contact__address">Санкт-Петербург, пр. Литейный 29</p>
+            </div>
+
+            <div class="contacts__card">
+                <div class="contacts__map">
+                    <a href="https://yandex.ru/maps/?um=constructor%3A2a770f9a69fc64590b3b610dc46bddfce49290a064d71ab647c7b74a6153f71e&amp;source=constructorStatic"
+                       target="_blank"><img
+                            alt=""
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A2a770f9a69fc64590b3b610dc46bddfce49290a064d71ab647c7b74a6153f71e&amp;width=200&amp;height=150&amp;lang=ru_RU"
+                            style="border: 0;"/></a>
+                </div>
+
+                <p class="contact__address">Сочи, ул Декабристов 161/2</p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__left">
+            <img alt="" class="footer__logo" src="img/logo.png">
+
+            <div class="footer__info">
+                <p class="footer__text">Все наши йога-туры на главном сайте</p>
+                <a class="footer__link" href="#">www.yogamore.ru </a>
+            </div>
+        </div>
+
+        <div class="footer__right">
+            <p class="footer__text footer__ip-name">ИП Шубина А.В.</p>
+            <p class="footer__text">свидетельство о регистрации 66 №007073343 от 6 марта 2013 года.</p>
+            <p class="footer__text">ОГРН 313667006500023. ИНН: 665904891650</p>
+        </div>
+    </div>
+</footer>
 
 
 <script src="swiper/swiper.min.js"></script>

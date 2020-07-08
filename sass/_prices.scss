@@ -1,0 +1,176 @@
+.prices {
+  grid-column: full-start / full-end;
+  grid-row: participation-end / prices-end;
+
+  background-color: $color-background;
+  padding: 7.5rem 0;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem 0;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 9rem) [col-start] minmax(min-content, 82rem) [col-end] minmax(min-content, 9rem) 1fr;
+    grid-template-rows: repeat(4, min-content);
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr minmax(min-content, 3rem) [col-start] 80% [col-end] minmax(min-content, 3rem) 1fr;
+    }
+  }
+
+  &__heading {
+    grid-column: col-start / col-end;
+    grid-row: 1 / 2;
+    text-align: center;
+    margin-bottom: 5.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__card {
+    grid-column: col-start / col-end;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__tours {
+    grid-row: 1 / 2;
+    padding: 5rem;
+    background-color: $color-white;
+
+    display: grid;
+    grid-template-columns: minmax(min-content, 55rem) minmax(min-content, 10rem);
+    grid-template-rows: repeat(3, min-content);
+    grid-column-gap: 7rem;
+    grid-row-gap: 2.5rem;
+  }
+
+  &__item {
+    font-family: inherit;
+    font-size: 2rem;
+    color: $color-black;
+    font-weight: 300;
+
+    span {
+      font-weight: 700;
+    }
+
+    &--orange {
+      color: $color-prices;
+    }
+  }
+
+  &__learn-more {
+    grid-row: 2 / 3;
+    padding: 1.5rem 5rem;
+    background-color: $color-prices-back;
+
+    display: grid;
+    grid-template-columns: minmax(min-content, 52rem) minmax(min-content, 15rem);
+    grid-column-gap: 6rem;
+    align-items: center;
+
+    .btn--small {
+      max-width: 14rem;
+      margin: 0;
+    }
+  }
+
+  &__offer {
+    font-family: inherit;
+    font-size: 2rem;
+    color: $color-black;
+    font-weight: 500;
+  }
+
+  &__contain {
+    grid-column: col-start / col-end;
+    grid-row: 3 / 4;
+    padding: 0 6rem;
+    font-family: inherit;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__included {
+    margin-bottom: 4rem;
+  }
+
+  &__caption {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3.9rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 1.5rem;
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: $color-gray-dark-2;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .check {
+    width: 2rem;
+    height: 1.4rem;
+    fill: $color-check;
+    margin-right: 2rem;
+  }
+
+  .cross {
+    width: 1rem;
+    height: 1rem;
+    fill: $color-cross;
+    margin-right: 2rem;
+  }
+
+  &__payment {
+    grid-column: col-start / col-end;
+    grid-row: 4 / 5;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+}
