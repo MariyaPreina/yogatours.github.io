@@ -57,7 +57,7 @@
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-column-gap: .5rem;
-    padding: 0 4rem;
+    padding: 0 2rem;
 
     @media only screen and (max-width: $bp-small) {
       padding: 0;
@@ -90,9 +90,7 @@
     font-family: inherit;
     font-size: 1.4rem;
     font-weight: 400;
+    text-align: center;
 
-    @media only screen and (max-width: $bp-small) {
-      text-align: center;
-    }
   }
 }
